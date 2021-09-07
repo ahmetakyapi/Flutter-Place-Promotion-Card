@@ -27,18 +27,15 @@ class MyApp extends StatelessWidget {
                   child: const Text(
                     'Kız Kulesi',
                     style: TextStyle(
-                      fontWeight: FontWeight.w800,
-                      fontSize: 18,
-                      letterSpacing:1.5 
-                    ),
+                        fontWeight: FontWeight.w800,
+                        fontSize: 18,
+                        letterSpacing: 1.5),
                   ),
                 ),
                 Text(
                   'İstanbul, Türkiye',
-                  style: TextStyle(letterSpacing: 1,
-                    color: Colors.grey[500],
-                    fontSize: 15
-                  ),
+                  style: TextStyle(
+                      letterSpacing: 1, color: Colors.grey[500], fontSize: 15),
                 ),
               ],
             ),
@@ -46,7 +43,7 @@ class MyApp extends StatelessWidget {
           /*3*/
           Icon(
             Icons.star,
-            color: Colors.green[500],
+            color: Colors.yellow[700],
           ),
           const Text('23'),
         ],
@@ -58,8 +55,8 @@ class MyApp extends StatelessWidget {
     Widget buttonSection = Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
-        _buildButtonColumn(color, Icons.call, 'ARA'),
         _buildButtonColumn(color, Icons.near_me, 'KONUM'),
+        _buildButtonColumn(color, Icons.call, 'ARA'),
         _buildButtonColumn(color, Icons.share, 'PAYLAŞ'),
       ],
     );
@@ -67,14 +64,8 @@ class MyApp extends StatelessWidget {
     Widget textSection = const Padding(
       padding: EdgeInsets.all(32),
       child: Text(
-        'Lake Oeschinen lies at the foot of the Blüemlisalp in the Bernese '
-        'Alps. Situated 1,578 meters above sea level, it is one of the '
-        'larger Alpine Lakes. A gondola ride from Kandersteg, followed by a '
-        'half-hour walk through pastures and pine forest, leads you to the '
-        'lake, which warms to 20 degrees Celsius in the summer. Activities '
-        'enjoyed here include rowing, and riding the summer toboggan run.',
-        softWrap: true,
-      ),
+        "Kız Kulesi, hakkında çeşitli rivayetler anlatılan, efsanelere konu olan, İstanbul Boğazı'nın Marmara Denizi'ne yakın kısmında, Salacak açıklarında yer alan küçük adacık üzerinde inşa edilmiş yapıdır. Üsküdar'ın sembolü haline gelen kule, Üsküdar’da Bizans devrinden kalan tek eserdir."
+      ), 
     );
 
     return MaterialApp(
