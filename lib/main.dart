@@ -25,15 +25,16 @@ class MyApp extends StatelessWidget {
                 Container(
                   padding: const EdgeInsets.only(bottom: 12),
                   child: const Text(
-                    'Oeschinen Lake Campground',
+                    'Kız Kulesi',
                     style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 17
+                      fontWeight: FontWeight.w800,
+                      fontSize: 18,
+                      letterSpacing:1.5 
                     ),
                   ),
                 ),
                 Text(
-                  'Kandersteg, Switzerland',
+                  'İstanbul, Türkiye',
                   style: TextStyle(letterSpacing: 1,
                     color: Colors.grey[500],
                     fontSize: 15
@@ -47,7 +48,7 @@ class MyApp extends StatelessWidget {
             Icons.star,
             color: Colors.green[500],
           ),
-          const Text('41'),
+          const Text('23'),
         ],
       ),
     );
@@ -77,16 +78,16 @@ class MyApp extends StatelessWidget {
     );
 
     return MaterialApp(
-      title: 'The Place Promotion App',
+      title: 'Gezilecek Yerler',
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('The Place Promotion App'),
+          title: const Text('Gezilecek Yerler'),
         ),
         body: ListView(
           children: [
             Image.asset(
               'images/tower.jpg',
-              width: 500,
+              width: 600,
               height: 240,
               fit: BoxFit.cover,
             ),
