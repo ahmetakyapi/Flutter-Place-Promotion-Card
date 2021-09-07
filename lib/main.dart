@@ -56,7 +56,7 @@ class MyApp extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
         _buildButtonColumn(color, Icons.near_me, 'KONUM'),
-        _buildButtonColumn(color, Icons.call, 'ARA'),
+        _buildButtonColumn(color, Icons.star, 'BEĞEN'),
         _buildButtonColumn(color, Icons.share, 'PAYLAŞ'),
       ],
     );
