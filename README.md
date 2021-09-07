@@ -1,4 +1,4 @@
-# place_promotion_app
+# place_promotion_card
 
 A new Flutter project.
 
