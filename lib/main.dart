@@ -63,9 +63,16 @@ class MyApp extends StatelessWidget {
 
     Widget textSection = const Padding(
       padding: EdgeInsets.all(32),
-      child: Text(
-        "Kız Kulesi, hakkında çeşitli rivayetler anlatılan, efsanelere konu olan, İstanbul Boğazı'nın Marmara Denizi'ne yakın kısmında, Salacak açıklarında yer alan küçük adacık üzerinde inşa edilmiş yapıdır. Üsküdar'ın sembolü haline gelen kule, Üsküdar’da Bizans devrinden kalan tek eserdir."
-      ), 
+      child: const Text(
+                    "Kız Kulesi, hakkında çeşitli rivayetler anlatılan, efsanelere konu olan, İstanbul Boğazı'nın "
+                    "Marmara Denizi'ne yakın kısmında,"
+                    "Salacak açıklarında yer alan küçük adacık üzerinde inşa edilmiş yapıdır."
+                    "Üsküdar'ın sembolü haline gelen kule, Üsküdar’da Bizans devrinden kalan tek eserdir.",
+                    style: TextStyle(
+                        fontSize: 14,
+                        height: 1.4,
+                        letterSpacing: 1.2),
+                  ),
     );
 
     return MaterialApp(
