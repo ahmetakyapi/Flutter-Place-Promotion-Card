@@ -55,7 +55,7 @@ class MyApp extends StatelessWidget {
     Widget buttonSection = Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
-        _buildButtonColumn(color, Icons.near_me, 'KONUM'),
+        _buildButtonColumn(color, Icons.location_on, 'KONUM'),
         _buildButtonColumn(color, Icons.star, 'BEĞEN'),
         _buildButtonColumn(color, Icons.share, 'PAYLAŞ'),
       ],
@@ -79,7 +79,7 @@ class MyApp extends StatelessWidget {
       title: 'Gezilecek Yerler',
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Gezilecek Yerler'),
+          title: Center(child: const Text('Gezilecek Yerler')),
         ),
         body: ListView(
           children: [
