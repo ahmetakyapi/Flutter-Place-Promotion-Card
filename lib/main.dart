@@ -17,11 +17,9 @@ class MyApp extends StatelessWidget {
       child: Row(
         children: [
           Expanded(
-            /*1*/
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                /*2*/
                 Container(
                   padding: const EdgeInsets.only(bottom: 12),
                   child: const Text(
@@ -40,7 +38,6 @@ class MyApp extends StatelessWidget {
               ],
             ),
           ),
-          /*3*/
           Icon(
             Icons.star,
             color: Colors.yellow[700],
